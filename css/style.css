@@ -1,0 +1,167 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container {
+    max-width: 1024px; /* Максимальная ширина контейнера */
+    margin: 0 auto;
+    padding-left: 60px; /* Левое padding-поле */
+    padding-right: 60px; /* Центрирование контейнера */
+    width: 93%;
+    height: 93%;  
+}
+.full-height {
+    height: 100vh; /* Высота во весь экран */    
+    overflow: hidden;
+    position: relative;
+}
+
+.blue {
+    background-color: #CBECFF; /* Фиолетовый цвет */
+}
+
+/* Основной экран */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.language-buttons {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    z-index: 1;
+}
+
+.language-button {
+    background-color: #CBECFF;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    flex-shrink: 0;
+    margin-left: 10px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.clicked {
+    background-color: white;
+    color: #0962E8; /* Белый фон при нажатии */
+}
+
+
+.language-button:active::before {
+    opacity: 1;
+}
+
+.main_screen {
+    
+}
+
+.main_line {
+    display: flex;
+    align-items: center;
+    height: 78vh;
+    justify-content: center;
+}
+
+.first_part {
+    width: 51%;
+}
+
+.first_part_image {
+    background: url('../images/FinKit.png') no-repeat;
+    background-size: contain; /* Или 'cover', в зависимости от требуемого эффекта */
+    width: 201px; /* Пример ширины */
+    height: 75px;
+}
+
+.first_part h1 {
+    color: #29374E;
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 28.6px */
+    text-align: left;
+}
+
+.second_part {
+    background: url('../images/Group2180.png') no-repeat;
+    background-size: contain; /* Или 'cover', в зависимости от требуемого эффекта */
+    background-position: 69px 9px;
+    width: 489px;
+    height: 460px;
+    scale: 1.5;
+}
+
+.button {
+    width: 199px;
+    height: 52px;
+    top: 339px;
+    left: 208px;
+    border-radius: 12px;
+    background: #0962E8;
+    color: white; /* Цвет текста кнопки */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 25.2px */
+}
+
+/* Если это стили для ссылки (a), добавьте следующее */
+.button:hover {
+    background: #0752c2; /* Цвет при наведении */
+    /* Дополнительные стили для состояния наведения */
+}
+
+.low_line {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-left: 60px;
+    padding-right: 60px;
+    bottom: -33px;
+}
+
+.small_block {
+    width: 22%;
+    z-index: 1;
+    height: 118px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 6px 4px 12px 0px rgba(0, 0, 0, 0.05);
+}
+

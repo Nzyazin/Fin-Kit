@@ -276,3 +276,36 @@ h3 {
     bottom: -9px;
     right: 0px;
 }
+
+/* Section 3*/
+
+.sub_containers {
+    display: flex;
+    margin-bottom: 120px;
+}
+
+.sub_container_1 {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    text-align: left;
+}
+
+.sub_container_1_text  h4{
+    font-family: 'Inter', sans-serif;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 49.4px */
+    letter-spacing: -1.14px;
+}
+
+.sub_container_2 {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sub_container_item {
+    width: 50%;
+}

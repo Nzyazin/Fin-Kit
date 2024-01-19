@@ -2,7 +2,6 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow-x: hidden;
 }
 section {
     width: 100%;
@@ -17,11 +16,11 @@ section {
     padding-left: 60px; /* Левое padding-поле */
     padding-right: 60px; /* Центрирование контейнера */
     width: 93%;
-    height: 93%;  
+    height: 93%; 
+    overflow: hidden; 
 }
 .full-height {
-    height: 100vh; /* Высота во весь экран */    
-    overflow: hidden;
+    height: 100vh; /* Высота во весь экран */   
     position: relative;
 }
 
@@ -153,15 +152,28 @@ body {
     padding-left: 60px;
     padding-right: 60px;
     bottom: -33px;
+    overflow: visible;
+    width: 93%;
 }
 
 .small_block {
-    width: 22%;
-    z-index: 1;
+    width: 20%;
     height: 118px;
     flex-shrink: 0;
     border-radius: 20px;
     background: #FFF;
     box-shadow: 6px 4px 12px 0px rgba(0, 0, 0, 0.05);
+
+    color: #29374E;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 22.4px */
+    align-items: center;
+    display: flex;
+    text-align: left;
+    padding-left: 21px;
+    
 }
 

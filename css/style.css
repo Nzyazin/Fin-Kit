@@ -147,12 +147,10 @@ body {
     position: absolute;
     display: flex;
     justify-content: space-between;
-    max-width: 1024px;
     margin: 0 auto;
-    padding-left: 60px;
-    padding-right: 60px;
     bottom: -24px;
     overflow: visible;
+    max-width: 1024px;
     width: 93%;
 }
 
@@ -341,3 +339,117 @@ h3 {
     font-weight: 500;
     line-height: 140%; /* 19.6px */
 }
+
+.d-mobile {
+    display: none;
+}
+
+.d-desktop {
+    display: flex;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    /* Стили для небольших ноутбуков и десктопов */
+    .low_line {
+        max-width: 852px;
+    }
+
+    .container {
+        max-width: 852px;
+    }
+
+    .product {
+        height: 274px;
+    }
+
+    .product_image_1, .product_image_2 {
+        width: 214px;
+        height: 263px;
+        position: absolute;
+        bottom: -8px;
+        right: 1px;
+    }
+
+    .sub_container_item {
+        width: 45%;
+    }
+
+    .small_block_icon {
+        top: 9px;
+        right: 12px;
+    }
+
+    .d-mobile {
+        display: none;
+    }
+
+    .d-desktop {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    /* Стили для планшетов */
+    .main_line {
+        flex-direction: column-reverse;
+        justify-content: unset;
+        height: 57vh;
+    }
+    
+    .first_part {
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .first_part h1 {
+        line-height: 120%;
+        text-align: left;
+        margin-top: 9px;
+        margin-bottom: 12px;
+    }
+
+    .main_screen {
+        height: 60vh;
+    }
+
+    .low_line {
+        position: unset;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .small_block {
+        width: 42%;
+    }
+
+    .container {
+        max-width: 852px;
+    }
+
+    .product {
+        height: 274px;
+    }
+
+    .product_image_1, .product_image_2 {
+        width: 214px;
+        height: 263px;
+        position: absolute;
+        bottom: -8px;
+        right: 1px;
+    }
+
+    .sub_container_item {
+        width: 45%;
+    }
+
+    .second_part {
+        background-position: 3px 11px;
+        width: 257px;
+        height: 39vh;
+    }
+}
+
+
